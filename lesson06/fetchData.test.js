@@ -18,7 +18,7 @@ import  { fetchData } from './fetchData';
 // });
 
 // test('fetchData 返回结果为 404', () =>{
-    // expect.assertions(1);
+//     expect.assertions(1);
 //     //添加预期必须通过的expect个数
 //     //当返回的结果为404的时候，必须执行一次expect，expect.assertions(1);满足条件才算测试完成
 //     return fetchData().catch((e) => {
@@ -34,10 +34,12 @@ import  { fetchData } from './fetchData';
 //             Success:"ok"
 //         }
 //     });
-//     // return fetchData().then(res =>{
-//     //     console.log(res);
-//     // })
 // });
+// return fetchData().then(res =>{
+//     console.log(res);
+// })
+
+
 
 // test('fetchData 返回结果为 404', () =>{
 //     return expect(fetchData()).rejects.toThrow();
@@ -70,5 +72,4 @@ test('fetchData 返回结果为 404', async() =>{
         expect(e.toString()).toEqual('Error: Request failed with status code 404');
         console.log(e.toString());
     }
-    
 });
